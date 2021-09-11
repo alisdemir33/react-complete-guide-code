@@ -18,7 +18,7 @@ function App() {
   const dispatch =useDispatch();
 
 useEffect (() =>{ 
-    dispatch( fetchCartData());
+    dispatch(fetchCartData());
 }
 ,[dispatch])
 
@@ -29,8 +29,10 @@ useEffect (() =>{
     isInitial=false;
     return;
   }
-  if(cart.changed)
+  if(cart.changed){
+    ;debugger
     dispatch(sendCartData(cart)); 
+  }
 
   }, [cart,dispatch]);
 

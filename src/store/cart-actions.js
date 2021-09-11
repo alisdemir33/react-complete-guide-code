@@ -13,14 +13,14 @@ export const fetchCartData = () => {
             if (!response.ok) {
                 throw new Error(' Fetch Cart Failed!')
             }
-
+           
             const data = await response.json();
             return data;
         }
 
         try {
-            const cartData = await fetchCartData()
-
+            const cartData = await fetchData()
+            ;debugger
             dispatch(cartActions.replaceCart(
                 {
                     items:cartData.items || [], 
