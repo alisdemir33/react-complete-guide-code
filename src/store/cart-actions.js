@@ -2,7 +2,7 @@ import { uiActions } from './ui-slice';
 import { cartActions } from './cart-slice';
 
 
-
+// stashş ger almadan sunucuya yolladım
 export const fetchCartData = () => {
     return async (dispatch) => {
 
