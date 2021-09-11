@@ -2,7 +2,8 @@ import { uiActions } from './ui-slice';
 import { cartActions } from './cart-slice';
 
 
-// stashş ger almadan sunucuya yolladım
+// stash denemesi ....3 . denemeyi yapıp pull yapıcam ama önce stasa atcam
+//gene bir seyleri satshdan alıp değiştirdim ve şu an originden farklıyım
 export const fetchCartData = () => {
     return async (dispatch) => {
 
